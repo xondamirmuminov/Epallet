@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header__inner {
+  padding: 50px 0 !important;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.icon-margin {
+  margin-right: 6px;
+}
+.j-between{
+  justify-content: space-between;
+}
+.link__active {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.product__img {
+  width: 100%;
+  max-width: 350px;
+}
+.product__img--small {
+  width: 100%;
+  max-width: 70px;
+  margin-right: 25px;
+}
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+table {
+  border-collapse:collapse;
+  width: 100%;
+  height: 13vh;
+  padding-top: 40px;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th a {
+  color: #a7b2c0;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding-bottom: 32px;
+}
+
+th a:hover {
+  color: black;
+}
+
+th a::before , .active::before {
+  transition: .8s;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: -10px;
+  right: -10px;
+  height: 5px;
+  width: 0;
+  background: blue;
+}
+.active::before{
+  height: 5px;
+  width: 120%;
+}
+th a:hover::before{
+  height: 5px;
+  width: 120%;
+}
+.active {
+  color: black;
+  font-weight: 600;
+}
